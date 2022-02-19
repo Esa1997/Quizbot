@@ -1,0 +1,112 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - right on
+    - heck yeah
+    - sure
+    - yes!
+    - yep
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+
+- intent: inform
+  examples: |
+    - thats a wood bug
+    - i'd call that a pillbug
+    - i'd call that a rolly polly
+    - I'd just squash the slater
+    - thats a doodle bug
+    - you mean a potato bug
+    - wood bug
+    - rolly polly
+    - soda
+    - pop
+    - thats a pop
+    - i'd say coke
+    - Are you ready to go
+    - Are y'all ready to go
+    - Are yours ready to go
+    - Are yinz ready to go
+    - i'd say you 
+    - like you guys 
+    - probably you guys 
+    - you guys
+    - y'all
+    - you
+
+- intent: thankyou
+  examples: |
+    - Thanks for helping
+    - Thank you so much
+    - Thank you
+    - thank
+    - thanks and good bye
+    - okay cool uh good bye and & thank you
+    - you rock
+
+- intent: chitchat
+  examples: |
+    - What is your name?
+    - May I know your name?
+    - What do people call you?
+    - Do you have a name for yourself?
+    - What's the weather like today?
+    - Does it look sunny outside today?
+    - Oh, do you mind checking the weather for me please?
+    - I like sunny days in Berlin.
+
+- intent: stop
+  examples: |
+    - ok then you can't help me
+    - that was shit, you're not helping
+    - you can't help me
+    - okay i guess you can't help me
+    - stop
+    - stop go back
+    - do you get anything
+    - and you call your self bot 
+    - nothing else?
+    - stop go back?
+    - i want to stop
+    - quit
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you real?

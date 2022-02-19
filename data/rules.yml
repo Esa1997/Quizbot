@@ -1,0 +1,34 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Activate Quiz Form
+  steps:
+  - intent: affirm
+  - action: action_setup_questions
+  - action: action_setup_tf_questions
+  - action: action_setup_img_questions
+  - action: action_setup_mcq_questions
+  - action: action_quiz_setup
+  - active_loop: science_quiz_form
+
+- rule: Submit Quiz Form
+  condition:
+  - active_loop: science_quiz_form
+  steps: 
+  - action: science_quiz_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_calculate_score
+  - action: utter_score

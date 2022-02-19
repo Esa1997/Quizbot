@@ -1,0 +1,29 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_start_quiz
+  - intent: affirm
+  - action: action_setup_questions
+  - action: action_setup_tf_questions
+  - action: action_setup_img_questions
+  - action: action_setup_mcq_questions
+  - action: action_quiz_setup
+  - action: science_quiz_form
+  - active_loop: science_quiz_form
+  - active_loop: null
+  - action: action_calculate_score
+  - action: utter_score
+  - intent: thankyou
+  - action: utter_good_work
+
+- story: no quiz
+  steps:
+  - intent: greet
+  - action: utter_start_quiz
+  - intent: deny
+  - action: utter_noworries
+

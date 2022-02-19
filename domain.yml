@@ -1,0 +1,972 @@
+version: "2.0"
+
+intents:
+  - chitchat:
+      use_entities: []
+  - inform
+  - greet
+  - affirm
+  - deny
+  - stop
+  - thankyou
+  - bot_challenge
+
+entities:
+  - answer_a
+  - answer_b
+  - answer_c
+  - answer_d
+  - answer_e
+  - answer_f
+  - answer_g
+  - answer_h
+  - answer_i
+  - answer_j
+  - img_answer_a
+  - img_answer_b
+  - img_answer_c
+  - img_answer_d
+  - img_answer_e
+  - img_answer_f
+  - img_answer_g
+  - img_answer_h
+  - img_answer_i
+  - img_answer_j
+  - mcq_answer_a
+  - mcq_answer_b
+  - mcq_answer_c
+  - mcq_answer_d
+  - mcq_answer_e
+  - mcq_answer_f
+  - mcq_answer_g
+  - mcq_answer_h
+  - mcq_answer_i
+  - mcq_answer_j
+  - tf_answer_a
+  - tf_answer_b
+  - tf_answer_c
+  - tf_answer_d
+  - tf_answer_e
+  - tf_answer_f
+  - tf_answer_g
+  - tf_answer_h
+  - tf_answer_i
+  - tf_answer_j
+
+slots:
+  question_a:
+    type: unfeaturized
+    auto_fill: false
+  question_b:
+    type: unfeaturized
+    auto_fill: false
+  question_c:
+    type: unfeaturized
+    auto_fill: false
+  question_d:
+    type: unfeaturized
+    auto_fill: false
+  question_e:
+    type: unfeaturized
+    auto_fill: false
+  question_f:
+    type: unfeaturized
+    auto_fill: false
+  question_g:
+    type: unfeaturized
+    auto_fill: false
+  question_h:
+    type: unfeaturized
+    auto_fill: false
+  question_i:
+    type: unfeaturized
+    auto_fill: false
+  question_j:
+    type: unfeaturized
+    auto_fill: false
+  gen_answer_a:
+    type: unfeaturized
+    auto_fill: false
+  gen_answer_b:
+    type: unfeaturized
+    auto_fill: false
+  gen_answer_c:
+    type: unfeaturized
+    auto_fill: false
+  gen_answer_d:
+    type: unfeaturized
+    auto_fill: false
+  gen_answer_e:
+    type: unfeaturized
+    auto_fill: false
+  gen_answer_f:
+    type: unfeaturized
+    auto_fill: false
+  gen_answer_g:
+    type: unfeaturized
+    auto_fill: false
+  gen_answer_h:
+    type: unfeaturized
+    auto_fill: false
+  gen_answer_i:
+    type: unfeaturized
+    auto_fill: false
+  gen_answer_j:
+    type: unfeaturized
+    auto_fill: false
+  answer_a:
+    type: unfeaturized
+    auto_fill: false
+  answer_b:
+    type: unfeaturized
+    auto_fill: false
+  answer_c:
+    type: unfeaturized
+    auto_fill: false
+  answer_d:
+    type: unfeaturized
+    auto_fill: false
+  answer_e:
+    type: unfeaturized
+    auto_fill: false
+  answer_f:
+    type: unfeaturized
+    auto_fill: false
+  answer_g:
+    type: unfeaturized
+    auto_fill: false
+  answer_h:
+    type: unfeaturized
+    auto_fill: false
+  answer_i:
+    type: unfeaturized
+    auto_fill: false
+  answer_j:
+    type: unfeaturized
+    auto_fill: false
+  hint_a:
+    type: unfeaturized
+    auto_fill: false
+  hint_b:
+    type: unfeaturized
+    auto_fill: false
+  hint_c:
+    type: unfeaturized
+    auto_fill: false
+  hint_d:
+    type: unfeaturized
+    auto_fill: false
+  hint_e:
+    type: unfeaturized
+    auto_fill: false
+  hint_f:
+    type: unfeaturized
+    auto_fill: false
+  hint_g:
+    type: unfeaturized
+    auto_fill: false
+  hint_h:
+    type: unfeaturized
+    auto_fill: false
+  hint_i:
+    type: unfeaturized
+    auto_fill: false
+  hint_j:
+    type: unfeaturized
+    auto_fill: false
+  tf_question_a:
+    type: unfeaturized
+    auto_fill: false
+  tf_question_b:
+    type: unfeaturized
+    auto_fill: false
+  tf_question_c:
+    type: unfeaturized
+    auto_fill: false
+  tf_question_d:
+    type: unfeaturized
+    auto_fill: false
+  tf_question_e:
+    type: unfeaturized
+    auto_fill: false
+  tf_question_f:
+    type: unfeaturized
+    auto_fill: false
+  tf_question_g:
+    type: unfeaturized
+    auto_fill: false
+  tf_question_h:
+    type: unfeaturized
+    auto_fill: false
+  tf_question_i:
+    type: unfeaturized
+    auto_fill: false
+  tf_question_j:
+    type: unfeaturized
+    auto_fill: false  
+  tf_gen_answer_a:
+    type: unfeaturized
+    auto_fill: false
+  tf_gen_answer_b:
+    type: unfeaturized
+    auto_fill: false
+  tf_gen_answer_c:
+    type: unfeaturized
+    auto_fill: false
+  tf_gen_answer_d:
+    type: unfeaturized
+    auto_fill: false
+  tf_gen_answer_e:
+    type: unfeaturized
+    auto_fill: false
+  tf_gen_answer_f:
+    type: unfeaturized
+    auto_fill: false
+  tf_gen_answer_g:
+    type: unfeaturized
+    auto_fill: false
+  tf_gen_answer_h:
+    type: unfeaturized
+    auto_fill: false
+  tf_gen_answer_i:
+    type: unfeaturized
+    auto_fill: false
+  tf_gen_answer_j:
+    type: unfeaturized
+    auto_fill: false
+  tf_answer_a:
+    type: unfeaturized
+    auto_fill: false
+  tf_answer_b:
+    type: unfeaturized
+    auto_fill: false
+  tf_answer_c:
+    type: unfeaturized
+    auto_fill: false
+  tf_answer_d:
+    type: unfeaturized
+    auto_fill: false
+  tf_answer_e:
+    type: unfeaturized
+    auto_fill: false
+  tf_answer_f:
+    type: unfeaturized
+    auto_fill: false
+  tf_answer_g:
+    type: unfeaturized
+    auto_fill: false
+  tf_answer_h:
+    type: unfeaturized
+    auto_fill: false
+  tf_answer_i:
+    type: unfeaturized
+    auto_fill: false
+  tf_answer_j:
+    type: unfeaturized
+    auto_fill: false
+  tf_hint_a:
+    type: unfeaturized
+    auto_fill: false
+  tf_hint_b:
+    type: unfeaturized
+    auto_fill: false
+  tf_hint_c:
+    type: unfeaturized
+    auto_fill: false
+  tf_hint_d:
+    type: unfeaturized
+    auto_fill: false
+  tf_hint_e:
+    type: unfeaturized
+    auto_fill: false
+  tf_hint_f:
+    type: unfeaturized
+    auto_fill: false
+  tf_hint_g:
+    type: unfeaturized
+    auto_fill: false
+  tf_hint_h:
+    type: unfeaturized
+    auto_fill: false
+  tf_hint_i:
+    type: unfeaturized
+    auto_fill: false
+  tf_hint_j:
+    type: unfeaturized
+    auto_fill: false
+  img_question_a:
+    type: unfeaturized
+    auto_fill: false
+  img_question_b:
+    type: unfeaturized
+    auto_fill: false
+  img_question_c:
+    type: unfeaturized
+    auto_fill: false
+  img_question_d:
+    type: unfeaturized
+    auto_fill: false
+  img_question_e:
+    type: unfeaturized
+    auto_fill: false
+  img_question_f:
+    type: unfeaturized
+    auto_fill: false
+  img_question_g:
+    type: unfeaturized
+    auto_fill: false
+  img_question_h:
+    type: unfeaturized
+    auto_fill: false
+  img_question_i:
+    type: unfeaturized
+    auto_fill: false
+  img_question_j:
+    type: unfeaturized
+    auto_fill: false
+  img_url_a:
+    type: unfeaturized
+    auto_fill: false
+  img_url_b:
+    type: unfeaturized
+    auto_fill: false
+  img_url_c:
+    type: unfeaturized
+    auto_fill: false
+  img_url_d:
+    type: unfeaturized
+    auto_fill: false
+  img_url_e:
+    type: unfeaturized
+    auto_fill: false
+  img_url_f:
+    type: unfeaturized
+    auto_fill: false
+  img_url_g:
+    type: unfeaturized
+    auto_fill: false
+  img_url_h:
+    type: unfeaturized
+    auto_fill: false
+  img_url_i:
+    type: unfeaturized
+    auto_fill: false
+  img_url_j:
+    type: unfeaturized
+    auto_fill: false
+  img_gen_answer_a:
+    type: unfeaturized
+    auto_fill: false
+  img_gen_answer_b:
+    type: unfeaturized
+    auto_fill: false
+  img_gen_answer_c:
+    type: unfeaturized
+    auto_fill: false
+  img_gen_answer_d:
+    type: unfeaturized
+    auto_fill: false
+  img_gen_answer_e:
+    type: unfeaturized
+    auto_fill: false
+  img_gen_answer_f:
+    type: unfeaturized
+    auto_fill: false
+  img_gen_answer_g:
+    type: unfeaturized
+    auto_fill: false
+  img_gen_answer_h:
+    type: unfeaturized
+    auto_fill: false
+  img_gen_answer_i:
+    type: unfeaturized
+    auto_fill: false
+  img_gen_answer_j:
+    type: unfeaturized
+    auto_fill: false
+  img_answer_a:
+    type: unfeaturized
+    auto_fill: false
+  img_answer_b:
+    type: unfeaturized
+    auto_fill: false
+  img_answer_c:
+    type: unfeaturized
+    auto_fill: false
+  img_answer_d:
+    type: unfeaturized
+    auto_fill: false
+  img_answer_e:
+    type: unfeaturized
+    auto_fill: false
+  img_answer_f:
+    type: unfeaturized
+    auto_fill: false
+  img_answer_g:
+    type: unfeaturized
+    auto_fill: false
+  img_answer_h:
+    type: unfeaturized
+    auto_fill: false
+  img_answer_i:
+    type: unfeaturized
+    auto_fill: false
+  img_answer_j:
+    type: unfeaturized
+    auto_fill: false
+  img_hint_a:
+    type: unfeaturized
+    auto_fill: false
+  img_hint_b:
+    type: unfeaturized
+    auto_fill: false
+  img_hint_c:
+    type: unfeaturized
+    auto_fill: false
+  img_hint_d:
+    type: unfeaturized
+    auto_fill: false
+  img_hint_e:
+    type: unfeaturized
+    auto_fill: false
+  img_hint_f:
+    type: unfeaturized
+    auto_fill: false
+  img_hint_g:
+    type: unfeaturized
+    auto_fill: false
+  img_hint_h:
+    type: unfeaturized
+    auto_fill: false
+  img_hint_i:
+    type: unfeaturized
+    auto_fill: false
+  img_hint_j:
+    type: unfeaturized
+    auto_fill: false
+  mcq_question_a:
+    type: unfeaturized
+    auto_fill: false
+  qa_opt_a:
+    type: unfeaturized
+    auto_fill: false
+  qa_opt_b:
+    type: unfeaturized
+    auto_fill: false
+  qa_opt_c:
+    type: unfeaturized
+    auto_fill: false
+  qa_opt_d:
+    type: unfeaturized
+    auto_fill: false
+  mcq_question_b:
+    type: unfeaturized
+    auto_fill: false
+  qb_opt_a:
+    type: unfeaturized
+    auto_fill: false
+  qb_opt_b:
+    type: unfeaturized
+    auto_fill: false
+  qb_opt_c:
+    type: unfeaturized
+    auto_fill: false
+  qb_opt_d:
+    type: unfeaturized
+    auto_fill: false
+  mcq_question_c:
+    type: unfeaturized
+    auto_fill: false
+  qc_opt_a:
+    type: unfeaturized
+    auto_fill: false
+  qc_opt_b:
+    type: unfeaturized
+    auto_fill: false
+  qc_opt_c:
+    type: unfeaturized
+    auto_fill: false
+  qc_opt_d:
+    type: unfeaturized
+    auto_fill: false
+  mcq_question_d:
+    type: unfeaturized
+    auto_fill: false
+  qd_opt_a:
+    type: unfeaturized
+    auto_fill: false
+  qd_opt_b:
+    type: unfeaturized
+    auto_fill: false
+  qd_opt_c:
+    type: unfeaturized
+    auto_fill: false
+  qd_opt_d:
+    type: unfeaturized
+    auto_fill: false
+  mcq_question_e:
+    type: unfeaturized
+    auto_fill: false
+  qe_opt_a:
+    type: unfeaturized
+    auto_fill: false
+  qe_opt_b:
+    type: unfeaturized
+    auto_fill: false
+  qe_opt_c:
+    type: unfeaturized
+    auto_fill: false
+  qe_opt_d:
+    type: unfeaturized
+    auto_fill: false
+  mcq_question_f:
+    type: unfeaturized
+    auto_fill: false
+  qf_opt_a:
+    type: unfeaturized
+    auto_fill: false
+  qf_opt_b:
+    type: unfeaturized
+    auto_fill: false
+  qf_opt_c:
+    type: unfeaturized
+    auto_fill: false
+  qf_opt_d:
+    type: unfeaturized
+    auto_fill: false
+  mcq_question_g:
+    type: unfeaturized
+    auto_fill: false
+  qg_opt_a:
+    type: unfeaturized
+    auto_fill: false
+  qg_opt_b:
+    type: unfeaturized
+    auto_fill: false
+  qg_opt_c:
+    type: unfeaturized
+    auto_fill: false
+  qg_opt_d:
+    type: unfeaturized
+    auto_fill: false
+  mcq_question_h:
+    type: unfeaturized
+    auto_fill: false
+  qh_opt_a:
+    type: unfeaturized
+    auto_fill: false
+  qh_opt_b:
+    type: unfeaturized
+    auto_fill: false
+  qh_opt_c:
+    type: unfeaturized
+    auto_fill: false
+  qh_opt_d:
+    type: unfeaturized
+    auto_fill: false
+  mcq_question_i:
+    type: unfeaturized
+    auto_fill: false
+  qi_opt_a:
+    type: unfeaturized
+    auto_fill: false
+  qi_opt_b:
+    type: unfeaturized
+    auto_fill: false
+  qi_opt_c:
+    type: unfeaturized
+    auto_fill: false
+  qi_opt_d:
+    type: unfeaturized
+    auto_fill: false
+  mcq_question_j:
+    type: unfeaturized
+    auto_fill: false
+  qj_opt_a:
+    type: unfeaturized
+    auto_fill: false
+  qj_opt_b:
+    type: unfeaturized
+    auto_fill: false
+  qj_opt_c:
+    type: unfeaturized
+    auto_fill: false
+  qj_opt_d:
+    type: unfeaturized
+    auto_fill: false
+  mcq_gen_answer_a:
+    type: unfeaturized
+    auto_fill: false
+  mcq_gen_answer_b:
+    type: unfeaturized
+    auto_fill: false
+  mcq_gen_answer_c:
+    type: unfeaturized
+    auto_fill: false
+  mcq_gen_answer_d:
+    type: unfeaturized
+    auto_fill: false
+  mcq_gen_answer_e:
+    type: unfeaturized
+    auto_fill: false
+  mcq_gen_answer_f:
+    type: unfeaturized
+    auto_fill: false
+  mcq_gen_answer_g:
+    type: unfeaturized
+    auto_fill: false
+  mcq_gen_answer_h:
+    type: unfeaturized
+    auto_fill: false
+  mcq_gen_answer_i:
+    type: unfeaturized
+    auto_fill: false
+  mcq_gen_answer_j:
+    type: unfeaturized
+    auto_fill: false
+  mcq_answer_a:
+    type: unfeaturized
+    auto_fill: false
+  mcq_answer_b:
+    type: unfeaturized
+    auto_fill: false
+  mcq_answer_c:
+    type: unfeaturized
+    auto_fill: false
+  mcq_answer_d:
+    type: unfeaturized
+    auto_fill: false
+  mcq_answer_e:
+    type: unfeaturized
+    auto_fill: false
+  mcq_answer_f:
+    type: unfeaturized
+    auto_fill: false
+  mcq_answer_g:
+    type: unfeaturized
+    auto_fill: false
+  mcq_answer_h:
+    type: unfeaturized
+    auto_fill: false
+  mcq_answer_i:
+    type: unfeaturized
+    auto_fill: false
+  mcq_answer_j:
+    type: unfeaturized
+    auto_fill: false
+  mcq_hint_a:
+    type: unfeaturized
+    auto_fill: false
+  mcq_hint_b:
+    type: unfeaturized
+    auto_fill: false
+  mcq_hint_c:
+    type: unfeaturized
+    auto_fill: false
+  mcq_hint_d:
+    type: unfeaturized
+    auto_fill: false
+  mcq_hint_e:
+    type: unfeaturized
+    auto_fill: false
+  mcq_hint_f:
+    type: unfeaturized
+    auto_fill: false
+  mcq_hint_g:
+    type: unfeaturized
+    auto_fill: false
+  mcq_hint_h:
+    type: unfeaturized
+    auto_fill: false
+  mcq_hint_i:
+    type: unfeaturized
+    auto_fill: false
+  mcq_hint_j:
+    type: unfeaturized
+    auto_fill: false
+  score:
+    type: unfeaturized
+    auto_fill: false
+
+responses:
+  utter_start_quiz:
+  - text: "Would you like to start the quiz?"
+
+  utter_ask_answer_a:
+  - text: "{question_a}"
+  utter_ask_answer_b:
+  - text: "{question_b}"
+  utter_ask_answer_c:
+  - text: "{question_c}"
+  utter_ask_answer_d:
+  - text: "{question_d}"
+  utter_ask_answer_e:
+  - text: "{question_e}"
+  utter_ask_answer_f:
+  - text: "{question_f}"
+  utter_ask_answer_g:
+  - text: "{question_g}"
+  utter_ask_answer_h:
+  - text: "{question_h}"
+  utter_ask_answer_i:
+  - text: "{question_i}"
+  utter_ask_answer_j:
+  - text: "{question_j}"
+
+  utter_ask_img_answer_a:
+  - text: "{img_question_a}"
+    image: "{img_url_a}"
+  utter_ask_img_answer_b:
+  - text: "{img_question_b}"
+    image: "{img_url_b}"
+  utter_ask_img_answer_c:
+  - text: "{img_question_c}"
+    image: "{img_url_c}"
+  utter_ask_img_answer_d:
+  - text: "{img_question_d}"
+    image: "{img_url_d}"
+  utter_ask_img_answer_e:
+  - text: "{img_question_e}"
+    image: "{img_url_e}"
+  utter_ask_img_answer_f:
+  - text: "{img_question_f}"
+    image: "{img_url_f}"
+  utter_ask_img_answer_g:
+  - text: "{img_question_g}"
+    image: "{img_url_g}"
+  utter_ask_img_answer_h:
+  - text: "{img_question_h}"
+    image: "{img_url_h}"
+  utter_ask_img_answer_i:
+  - text: "{img_question_i}"
+    image: "{img_url_i}"
+  utter_ask_img_answer_j:
+  - text: "{img_question_j}"
+    image: "{img_url_j}"
+
+  utter_ask_mcq_answer_a:
+  - text: "{mcq_question_a}"
+    buttons:
+    - title: "{qa_opt_a}"
+      payload: "{qa_opt_a}"
+    - title: "{qa_opt_b}"
+      payload: "{qa_opt_b}"
+    - title: "{qa_opt_c}"
+      payload: "{qa_opt_c}"
+    - title: "{qa_opt_d}"
+      payload: "{qa_opt_d}"
+  utter_ask_mcq_answer_b:
+  - text: "{mcq_question_b}"
+    buttons:
+    - title: "{qb_opt_a}"
+      payload: "{qb_opt_a}"
+    - title: "{qb_opt_b}"
+      payload: "{qb_opt_b}"
+    - title: "{qb_opt_c}"
+      payload: "{qb_opt_c}"
+    - title: "{qb_opt_d}"
+      payload: "{qb_opt_d}"
+  utter_ask_mcq_answer_c:
+  - text: "{mcq_question_c}"
+    buttons:
+    - title: "{qc_opt_a}"
+      payload: "{qc_opt_a}"
+    - title: "{qc_opt_b}"
+      payload: "{qc_opt_b}"
+    - title: "{qc_opt_c}"
+      payload: "{qc_opt_c}"
+    - title: "{qc_opt_d}"
+      payload: "{qc_opt_d}"
+  utter_ask_mcq_answer_d:
+  - text: "{mcq_question_d}"
+    buttons:
+    - title: "{qd_opt_a}"
+      payload: "{qd_opt_a}"
+    - title: "{qd_opt_b}"
+      payload: "{qd_opt_b}"
+    - title: "{qd_opt_c}"
+      payload: "{qd_opt_c}"
+    - title: "{qd_opt_d}"
+      payload: "{qd_opt_d}"
+  utter_ask_mcq_answer_e:
+  - text: "{mcq_question_e}"
+    buttons:
+    - title: "{qe_opt_a}"
+      payload: "{qe_opt_a}"
+    - title: "{qe_opt_b}"
+      payload: "{qe_opt_b}"
+    - title: "{qe_opt_c}"
+      payload: "{qe_opt_c}"
+    - title: "{qe_opt_d}"
+      payload: "{qe_opt_d}"
+  utter_ask_mcq_answer_f:
+  - text: "{mcq_question_f}"
+    buttons:
+    - title: "{qf_opt_a}"
+      payload: "{qf_opt_a}"
+    - title: "{qf_opt_b}"
+      payload: "{qf_opt_b}"
+    - title: "{qf_opt_c}"
+      payload: "{qf_opt_c}"
+    - title: "{qf_opt_d}"
+      payload: "{qf_opt_d}"
+  utter_ask_mcq_answer_g:
+  - text: "{mcq_question_g}"
+    buttons:
+    - title: "{qg_opt_a}"
+      payload: "{qg_opt_a}"
+    - title: "{qg_opt_b}"
+      payload: "{qg_opt_b}"
+    - title: "{qg_opt_c}"
+      payload: "{qg_opt_c}"
+    - title: "{qg_opt_d}"
+      payload: "{qg_opt_d}"
+  utter_ask_mcq_answer_h:
+  - text: "{mcq_question_h}"
+    buttons:
+    - title: "{qh_opt_a}"
+      payload: "{qh_opt_a}"
+    - title: "{qh_opt_b}"
+      payload: "{qh_opt_b}"
+    - title: "{qh_opt_c}"
+      payload: "{qh_opt_c}"
+    - title: "{qh_opt_d}"
+      payload: "{qh_opt_d}"
+  utter_ask_mcq_answer_i:
+  - text: "{mcq_question_i}"
+    buttons:
+    - title: "{qi_opt_a}"
+      payload: "{qi_opt_a}"
+    - title: "{qi_opt_b}"
+      payload: "{qi_opt_b}"
+    - title: "{qi_opt_c}"
+      payload: "{qi_opt_c}"
+    - title: "{qi_opt_d}"
+      payload: "{qi_opt_d}"
+  utter_ask_mcq_answer_j:
+  - text: "{mcq_question_j}"
+    buttons:
+    - title: "{qj_opt_a}"
+      payload: "{qj_opt_a}"
+    - title: "{qj_opt_b}"
+      payload: "{qj_opt_b}"
+    - title: "{qj_opt_c}"
+      payload: "{qj_opt_c}"
+    - title: "{qj_opt_d}"
+      payload: "{qj_opt_d}"
+
+  utter_ask_tf_answer_a:
+  - text: "{tf_question_a}"
+    buttons: 
+    - title: "True"
+      payload: "True"
+    - title: "False"
+      payload: "False"
+  utter_ask_tf_answer_b:
+  - text: "{tf_question_b}"
+    buttons: 
+    - title: "True"
+      payload: "True"
+    - title: "False"
+      payload: "False"
+  utter_ask_tf_answer_c:
+  - text: "{tf_question_c}"
+    buttons: 
+    - title: "True"
+      payload: "True"
+    - title: "False"
+      payload: "False"
+  utter_ask_tf_answer_d:
+  - text: "{tf_question_d}"
+    buttons: 
+    - title: "True"
+      payload: "True"
+    - title: "False"
+      payload: "False"
+  utter_ask_tf_answer_e:
+  - text: "{tf_question_e}"
+    buttons: 
+    - title: "True"
+      payload: "True"
+    - title: "False"
+      payload: "False"
+  utter_ask_tf_answer_f:
+  - text: "{tf_question_f}"
+    buttons: 
+    - title: "True"
+      payload: "True"
+    - title: "False"
+      payload: "False"
+  utter_ask_tf_answer_g:
+  - text: "{tf_question_g}"
+    buttons: 
+    - title: "True"
+      payload: "True"
+    - title: "False"
+      payload: "False"
+  utter_ask_tf_answer_h:
+  - text: "{tf_question_h}"
+    buttons: 
+    - title: "True"
+      payload: "True"
+    - title: "False"
+      payload: "False"
+  utter_ask_tf_answer_i:
+  - text: "{tf_question_i}"
+    buttons: 
+    - title: "True"
+      payload: "True"
+    - title: "False"
+      payload: "False"
+  utter_ask_tf_answer_j:
+  - text: "{tf_question_j}"
+    buttons: 
+    - title: "True"
+      payload: "True"
+    - title: "False"
+      payload: "False"
+
+  utter_submit:
+  - text: "All Done!"
+  
+  utter_good_work:
+  - text: "Good Work :)"
+  
+  utter_score:
+  - text: "Your Score: {score}"
+
+  utter_noworries:
+  - text: "Ahhh no worries! We can do the quiz later."
+
+  utter_chichat:
+  - text: "Lets not chit chat and complete quiz"
+
+  utter_ask_continue:
+  - text: "Do you want to continue?"
+
+  utter_default:
+  - text: "Sorry, I did not get that. Try again!"
+
+  utter_greet:
+  - text: "Hey Welcome!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_working_on_it:
+  - text: "Crunching the data..."
+
+forms:
+  - science_quiz_form
+
+actions:
+  - action_calculate_score
+  - action_setup_questions
+  - action_setup_img_questions
+  - action_setup_mcq_questions
+  - action_setup_tf_questions
+  - action_quiz_setup
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
